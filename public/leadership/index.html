@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Leadership | Mark Patnaude</title>
+
+  <meta
+    name="description"
+    content="Mark Patnaude's leadership philosophy and selected examples of technology leadership across strategy, collaboration, governance, modernization, service delivery and organizational outcomes."
+  >
+
+  <link
+    rel="canonical"
+    href="https://markpatnaude.com/leadership/"
+  >
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    .leadership-hero {
+      padding: 120px 0 82px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .leadership-hero-content {
+      max-width: 920px;
+    }
+
+    .leadership-hero h1 {
+      font-size: clamp(3.1rem, 7vw, 5.5rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: 28px;
+    }
+
+    .leadership-thesis {
+      max-width: 860px;
+      font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+      line-height: 1.5;
+      color: var(--text);
+      margin-bottom: 26px;
+    }
+
+    .leadership-intro {
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 1.12rem;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .philosophy-section {
+      padding: 92px 0 104px;
+      background: var(--surface);
+    }
+
+    .philosophy-heading {
+      max-width: 800px;
+      margin-bottom: 50px;
+    }
+
+    .philosophy-heading h2 {
+      font-size: clamp(2.3rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .philosophy-heading p {
+      color: var(--muted);
+      font-size: 1.12rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .pillar-card {
+      padding: 34px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--surface);
+    }
+
+    .pillar-label {
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .pillar-card h3 {
+      font-size: 1.8rem;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+
+    .pillar-tagline {
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    .pillar-card p:last-child {
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .evidence-section {
+      padding: 94px 0 110px;
+      background: var(--bg);
+    }
+
+    .evidence-heading {
+      max-width: 800px;
+      margin-bottom: 54px;
+    }
+
+    .evidence-heading h2 {
+      font-size: clamp(2.3rem, 4vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .evidence-heading p {
+      color: var(--muted);
+      font-size: 1.12rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .evidence-block {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 48px;
+      align-items: start;
+      padding: 54px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .evidence-block:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .evidence-label {
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 12px;
+    }
+
+    .evidence-block h3 {
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+    }
+
+    .evidence-left p:last-child {
+      color: var(--muted);
+      font-size: 1.04rem;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .story-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 30px;
+      margin-bottom: 22px;
+    }
+
+    .story-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .story-card h4 {
+      font-size: 1.35rem;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .story-card p {
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 0;
+    }
+
+    .story-card.secondary {
+      background: transparent;
+      border-style: dashed;
+    }
+
+    .scale-section {
+      padding: 86px 0;
+      background: var(--dark);
+      color: #fff;
+    }
+
+    .scale-heading {
+      max-width: 800px;
+      margin-bottom: 42px;
+    }
+
+    .scale-heading h2 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+    }
+
+    .scale-heading p {
+      color: rgba(255,255,255,0.72);
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .scale-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 42px;
+    }
+
+    .scale-card {
+      padding: 24px 18px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 6px;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .scale-number {
+      display: block;
+      font-size: 1.9rem;
+      line-height: 1;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .scale-card p {
+      color: rgba(255,255,255,0.68);
+      line-height: 1.5;
+      font-size: 0.94rem;
+      margin: 0;
+    }
+
+    .scale-closing {
+      max-width: 860px;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.86);
+      margin: 0;
+    }
+
+    .leadership-footer-section {
+      padding: 72px 0;
+      background: var(--surface);
+    }
+
+    .leadership-footer-inner {
+      max-width: 780px;
+    }
+
+    .leadership-footer-inner h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+    }
+
+    .leadership-footer-inner p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: 950px) {
+      .pillar-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .evidence-block {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .scale-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .leadership-hero {
+        padding: 96px 0 58px;
+      }
+
+      .philosophy-section,
+      .evidence-section {
+        padding: 68px 0 80px;
+      }
+
+      .scale-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+
+      <a href="/" class="brand">Mark Patnaude</a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="/leadership/">Leadership</a></li>
+          <li><a href="/articles/">Writing & Ideas</a></li>
+          <li><a href="/#education">Speaking & Education</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="leadership-hero">
+      <div class="container">
+
+        <div class="leadership-hero-content">
+
+          <p class="eyebrow">
+            Leadership
+          </p>
+
+          <h1>
+            Technology creates capability. Leadership turns that capability into organizational results.
+          </h1>
+
+          <p class="leadership-thesis">
+            Technology leadership is rarely about technology alone.
+            The work is understanding what the organization is trying to accomplish,
+            bringing the right people into the decisions, and finding practical ways
+            to improve capability without creating unnecessary complexity.
+          </p>
+
+          <p class="leadership-intro">
+            My approach has consistently come back to three ideas:
+            think strategically about the whole organization, work collaboratively
+            across boundaries, and remain pragmatic about what will actually create value.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="philosophy-section">
+      <div class="container">
+
+        <div class="philosophy-heading">
+
+          <p class="eyebrow">
+            Leadership Philosophy
+          </p>
+
+          <h2>
+            Strategic. Collaborative. Pragmatic.
+          </h2>
+
+          <p>
+            These are not separate leadership styles. They work together.
+            Strategy establishes direction. Collaboration creates shared ownership.
+            Pragmatism turns intent into results.
+          </p>
+
+        </div>
+
+
+        <div class="pillar-grid">
+
+          <article class="pillar-card">
+
+            <p class="pillar-label">
+              Strategic
+            </p>
+
+            <h3>
+              See the whole organization.
+            </h3>
+
+            <p class="pillar-tagline">
+              Align technology with business goals.
+            </p>
+
+            <p>
+              Technology decisions should begin with the organization,
+              not the platform. That means understanding the business problem,
+              evaluating risk and investment in context, and building capability
+              for where the organization is going.
+            </p>
+
+          </article>
+
+
+          <article class="pillar-card">
+
+            <p class="pillar-label">
+              Collaborative
+            </p>
+
+            <h3>
+              Knock down silos.
+            </h3>
+
+            <p class="pillar-tagline">
+              Build shared ownership around organizational goals.
+            </p>
+
+            <p>
+              Technology crosses organizational boundaries. Strong outcomes depend
+              on open communication, shared understanding and the willingness to
+              bring business leaders, employees, partners and technology teams
+              into the same conversation.
+            </p>
+
+          </article>
+
+
+          <article class="pillar-card">
+
+            <p class="pillar-label">
+              Pragmatic
+            </p>
+
+            <h3>
+              Make it work in practice.
+            </h3>
+
+            <p class="pillar-tagline">
+              Focus on practical solutions that deliver results.
+            </p>
+
+            <p>
+              More technology does not necessarily create a better environment.
+              Sometimes the right answer is modernization. Sometimes it is
+              simplification. The test is whether the decision improves capability,
+              resilience, service or business performance.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="evidence-section">
+      <div class="container">
+
+        <div class="evidence-heading">
+
+          <p class="eyebrow">
+            Leadership in Practice
+          </p>
+
+          <h2>
+            The philosophy matters only if it holds up in the work.
+          </h2>
+
+          <p>
+            Selected examples show how strategic perspective, collaboration
+            and pragmatic execution translate into organizational outcomes.
+          </p>
+
+        </div>
+
+
+        <div class="evidence-block">
+
+          <div class="evidence-left">
+
+            <p class="evidence-label">
+              Strategic
+            </p>
+
+            <h3>
+              Modernize without losing sight of continuity.
+            </h3>
+
+            <p>
+              Transformation requires more than selecting a new platform.
+              It requires understanding what the organization needs to preserve,
+              what should change and what capabilities need to exist next.
+            </p>
+
+          </div>
+
+          <div>
+
+            <article class="story-card">
+
+              <h4>
+                Enterprise platform modernization
+              </h4>
+
+              <p>
+                An aging ERP environment contained decades of business information
+                and accumulated dependencies. Modernization included evaluating
+                six vendors and migrating roughly 30 years of data to a new platform.
+                The central leadership challenge was not simply implementing software,
+                but preserving continuity while creating a more sustainable foundation
+                for the organization.
+              </p>
+
+            </article>
+
+            <article class="story-card secondary">
+
+              <h4>
+                Building measurable security maturity
+              </h4>
+
+              <p>
+                Cybersecurity was treated as an ongoing management discipline rather
+                than a collection of technical controls. Identity, MFA, lifecycle
+                governance and NIST Cybersecurity Framework-based improvement helped
+                increase measured security maturity by approximately 22% over 18 months.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <div class="evidence-block">
+
+          <div class="evidence-left">
+
+            <p class="evidence-label">
+              Collaborative
+            </p>
+
+            <h3>
+              Shared outcomes require shared ownership.
+            </h3>
+
+            <p>
+              A technology team can meet its own targets while the larger business
+              outcome still suffers. Collaboration means keeping the broader objective
+              visible and making sure decisions work across organizational boundaries.
+            </p>
+
+          </div>
+
+          <div>
+
+            <article class="story-card">
+
+              <h4>
+                Making governance cross-functional
+              </h4>
+
+              <p>
+                Identity and access management could not be an IT-only responsibility.
+                Working across HR, business leadership and technology helped clarify
+                ownership for onboarding, offboarding and role changes, connecting
+                technical controls to the people and business decisions behind them.
+              </p>
+
+            </article>
+
+            <article class="story-card secondary">
+
+              <h4>
+                Moving partners beyond tickets and SLAs
+              </h4>
+
+              <p>
+                MSP and vendor relationships were managed through more than operational
+                metrics. Service reviews, QBRs, improvement priorities and direct
+                business feedback helped move the conversation from service provision
+                toward shared understanding of organizational priorities and outcomes.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <div class="evidence-block">
+
+          <div class="evidence-left">
+
+            <p class="evidence-label">
+              Pragmatic
+            </p>
+
+            <h3>
+              Simplify where simplicity creates strength.
+            </h3>
+
+            <p>
+              Technology environments accumulate complexity easily. Leadership
+              sometimes means resisting the instinct to add another layer and instead
+              finding a simpler way to improve reliability and service.
+            </p>
+
+          </div>
+
+          <div>
+
+            <article class="story-card">
+
+              <h4>
+                Simplifying remote access
+              </h4>
+
+              <p>
+                A Citrix-based remote-access environment had accumulated operational
+                dependencies that became especially visible during an outage.
+                Rather than continuing to layer complexity onto the environment,
+                the approach was simplified around Microsoft Terminal Services,
+                improving manageability and resilience.
+              </p>
+
+            </article>
+
+            <article class="story-card secondary">
+
+              <h4>
+                Improving the work, not simply the system
+              </h4>
+
+              <p>
+                A finance document-management process that previously required
+                roughly half a day to a full day was redesigned so information
+                could be processed in approximately one to two hours.
+                The technology enabled the change; the meaningful result was
+                faster access to information and a better operating process.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="scale-section">
+      <div class="container">
+
+        <div class="scale-heading">
+
+          <p class="eyebrow">
+            Leadership Context
+          </p>
+
+          <h2>
+            Experience across a complex, multi-entity environment.
+          </h2>
+
+          <p>
+            Scale provides context, but the more important question is how
+            technology leadership translates that scale into reliable,
+            governable and useful organizational capability.
+          </p>
+
+        </div>
+
+
+        <div class="scale-grid">
+
+          <div class="scale-card">
+            <span class="scale-number">15</span>
+            <p>Locations supported across Illinois and Wisconsin</p>
+          </div>
+
+          <div class="scale-card">
+            <span class="scale-number">500</span>
+            <p>Users across internal and contract workforces</p>
+          </div>
+
+          <div class="scale-card">
+            <span class="scale-number">1,000+</span>
+            <p>Technology assets across the lifecycle</p>
+          </div>
+
+          <div class="scale-card">
+            <span class="scale-number">4</span>
+            <p>Operating businesses in a multi-entity environment</p>
+          </div>
+
+          <div class="scale-card">
+            <span class="scale-number">Blended</span>
+            <p>Internal teams, MSPs and strategic technology partners</p>
+          </div>
+
+        </div>
+
+        <p class="scale-closing">
+          The scale has changed over the years. The leadership questions have
+          been remarkably consistent: What are we trying to accomplish?
+          Who needs to be involved? What is the simplest responsible way forward?
+          And how will we know it created value?
+        </p>
+
+      </div>
+    </section>
+
+
+    <section class="leadership-footer-section">
+      <div class="container">
+
+        <div class="leadership-footer-inner">
+
+          <p class="eyebrow">
+            Writing & Ideas
+          </p>
+
+          <h2>
+            The same leadership questions appear throughout my writing.
+          </h2>
+
+          <p>
+            Explore essays and articles on technology leadership, artificial
+            intelligence, governance, service delivery and organizational change.
+          </p>
+
+          <a
+            href="/articles/"
+            class="button button-primary"
+          >
+            Explore Writing
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <p>
+        © 2026 Mark Patnaude. All rights reserved.
+      </p>
+
+      <p>
+        Technology Executive • Author • Practitioner • Educator
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
