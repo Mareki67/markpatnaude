@@ -1,1 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Technology Changes. Leadership Challenges Repeat. | Mark Patnaude</title>
+
+  <meta
+    name="description"
+    content="Technology Changes. Leadership Challenges Repeat. by Mark Patnaude explores a leadership framework for navigating technology change through adoption, growth, complexity and governance."
+  >
+
+  <link
+    rel="canonical"
+    href="https://markpatnaude.com/articles/technology-changes-leadership-challenges-repeat/"
+  >
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    .article-hero {
+      padding: 100px 0 64px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .article-hero-content {
+      max-width: 940px;
+    }
+
+    .article-hero h1 {
+      font-size: clamp(3rem, 7vw, 5.2rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: 24px;
+    }
+
+    .article-subtitle {
+      max-width: 800px;
+      font-size: clamp(1.25rem, 2vw, 1.55rem);
+      line-height: 1.5;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .article-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .article-image-section {
+      background: var(--surface);
+      padding: 64px 0 24px;
+    }
+
+    .article-feature-image {
+      display: block;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .article-section {
+      padding: 56px 0 96px;
+      background: var(--surface);
+    }
+
+    .article-body {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      font-size: 1.13rem;
+      line-height: 1.82;
+      margin-bottom: 26px;
+      color: #303943;
+    }
+
+    .article-body h2 {
+      font-size: clamp(1.85rem, 3vw, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-top: 62px;
+      margin-bottom: 22px;
+      color: var(--text);
+    }
+
+    .article-body h2:first-child {
+      margin-top: 0;
+    }
+
+    .article-body strong {
+      color: var(--text);
+    }
+
+    .article-sequence {
+      margin: 34px 0 42px;
+      padding: 28px 32px;
+      background: var(--bg);
+      border-left: 4px solid var(--accent);
+    }
+
+    .article-sequence p {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .article-sequence p:last-child {
+      margin-bottom: 0;
+    }
+
+    .article-question {
+      margin: 34px 0;
+      padding: 26px 30px;
+      background: var(--bg);
+      border-left: 4px solid var(--accent);
+      font-size: 1.25rem;
+      line-height: 1.55;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .article-body ul {
+      margin: 0 0 30px 24px;
+      padding: 0;
+    }
+
+    .article-body li {
+      margin-bottom: 12px;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      color: #303943;
+    }
+
+    .article-ending {
+      margin-top: 52px;
+      padding-top: 36px;
+      border-top: 1px solid var(--border);
+    }
+
+    .article-ending p:last-child {
+      margin-bottom: 0;
+    }
+
+    .article-source-note {
+      margin-top: 56px;
+      padding: 24px 28px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .article-source-note p {
+      margin-bottom: 12px;
+      font-size: 0.98rem;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .article-source-note p:last-child {
+      margin-bottom: 0;
+    }
+
+    .article-source-note a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .article-source-note a:hover {
+      text-decoration: underline;
+    }
+
+    .article-nav {
+      background: var(--bg);
+      padding: 64px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .article-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .article-nav h2 {
+      font-size: 2rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+
+    .article-nav p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 850px) {
+      .article-hero {
+        padding: 72px 0 56px;
+      }
+
+      .article-image-section {
+        padding: 40px 0 12px;
+      }
+
+      .article-section {
+        padding: 48px 0 72px;
+      }
+
+      .article-sequence,
+      .article-question {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+
+      <a href="/" class="brand">Mark Patnaude</a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="/#leadership">Leadership</a></li>
+          <li><a href="/#writing">Writing & Ideas</a></li>
+          <li><a href="/#education">Speaking & Education</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="article-hero">
+      <div class="container">
+
+        <div class="article-hero-content">
+
+          <p class="eyebrow">
+            Technology Leadership • Governance
+          </p>
+
+          <h1>
+            Technology Changes. Leadership Challenges Repeat.
+          </h1>
+
+          <p class="article-subtitle">
+            A leadership framework for navigating technology change.
+          </p>
+
+          <p class="article-meta">
+            By Mark Patnaude • 2026 • Originally published on LinkedIn
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="article-image-section">
+      <div class="container">
+
+        <img
+          src="/images/technology-changes-leadership-challenges-repeat.png"
+          alt="Technology Changes. Leadership Challenges Repeat. A Leadership Framework for Navigating Technology Change"
+          class="article-feature-image"
+        >
+
+      </div>
+    </section>
+
+
+    <article class="article-section">
+      <div class="container">
+
+        <div class="article-body">
+
+          <p>
+            Every major technology wave follows a familiar pattern.
+          </p>
+
+          <div class="article-sequence">
+            <p>Adoption.</p>
+            <p>Growth.</p>
+            <p>Complexity.</p>
+            <p>Governance.</p>
+          </div>
+
+          <p>
+            AI isn't changing the pattern. It's compressing the timeline.
+            It's easy to focus on what AI can do.
+          </p>
+
+          <p>
+            Technology changes quickly. Organizations don't always change
+            at the same pace.
+          </p>
+
+          <p>
+            I've watched organizations navigate multiple technology
+            transitions throughout my career. Whether modernizing
+            infrastructure, implementing enterprise systems, enabling
+            remote work, or adopting emerging technologies, every wave
+            created new opportunities to make organizations more capable.
+          </p>
+
+          <p>
+            <strong>
+              The technology changed, but the leadership questions did not.
+            </strong>
+          </p>
+
+
+          <h2>Adoption</h2>
+
+          <p>
+            <strong>Every technology wave begins with opportunity.</strong>
+          </p>
+
+          <p>
+            Organizations naturally begin asking how a new technology can
+            help the business. Can it make work easier? Help people make
+            better decisions? Create business value?
+          </p>
+
+          <p>
+            That curiosity is healthy because innovation should begin with
+            solving a business problem, not adopting technology for its
+            own sake.
+          </p>
+
+          <p>
+            The first leadership question should not be:
+          </p>
+
+          <div class="article-question">
+            How do we govern this?
+          </div>
+
+          <p>
+            It should be:
+          </p>
+
+          <div class="article-question">
+            What business problem are we trying to solve?
+          </div>
+
+          <p>
+            Without a clear business purpose, even successful technology
+            initiatives can struggle to deliver meaningful business value.
+          </p>
+
+
+          <h2>Growth</h2>
+
+          <p>
+            <strong>
+              As adoption grows, the leadership challenge changes.
+            </strong>
+          </p>
+
+          <p>
+            Success encourages broader adoption. New use cases emerge,
+            more people become involved, and existing platforms continue
+            to evolve.
+          </p>
+
+          <p>
+            What began as a focused initiative becomes part of everyday
+            business.
+          </p>
+
+          <p>
+            That's when leadership begins asking different questions.
+          </p>
+
+          <ul>
+            <li>Who owns the outcome?</li>
+            <li>How will success be measured?</li>
+            <li>What level of investment is justified?</li>
+          </ul>
+
+          <p>
+            Those answers help organizations continue growing without
+            creating unnecessary complexity.
+          </p>
+
+
+          <h2>Complexity</h2>
+
+          <p>
+            <strong>Success often introduces complexity.</strong>
+          </p>
+
+          <p>
+            As organizations become more capable, they also become more
+            complex.
+          </p>
+
+          <p>
+            More platforms, more vendors, more information, and more
+            operational dependencies make it harder to maintain visibility
+            and make consistent decisions.
+          </p>
+
+          <p>
+            Many leaders experienced this progression during the rapid
+            shift to remote work.
+          </p>
+
+          <p>
+            The first priority was enabling people to work. As those
+            environments matured, attention naturally shifted toward
+            cybersecurity, identity management, support, compliance, and
+            operational consistency.
+          </p>
+
+          <p>
+            Recent research reinforces this pattern. Organizations are
+            adopting AI rapidly, yet many continue to report limited
+            visibility into AI software spending, increasing concern over
+            unnecessary AI-related costs, and gaps in formal governance.
+          </p>
+
+          <p>
+            Together, those patterns point to a leadership challenge, not
+            just a technology challenge.
+          </p>
+
+
+          <h2>Governance</h2>
+
+          <p>
+            <strong>
+              Good governance allows innovation to scale safely.
+            </strong>
+          </p>
+
+          <p>
+            Some people see governance as slowing innovation.
+          </p>
+
+          <p>
+            My experience has been different.
+          </p>
+
+          <p>
+            Good governance provides the structure organizations need to
+            turn experimentation into consistent business results.
+          </p>
+
+          <p>
+            Governance is not simply an IT responsibility. It is an
+            organizational responsibility.
+          </p>
+
+          <ul>
+            <li><strong>Technology</strong> implements solutions.</li>
+            <li><strong>Security</strong> helps manage risk.</li>
+            <li><strong>Finance</strong> evaluates investment.</li>
+            <li><strong>Legal</strong> advises on compliance.</li>
+            <li><strong>Leadership</strong> owns the outcomes.</li>
+          </ul>
+
+          <p>
+            AI is compressing the timeline. Organizations are moving from
+            adoption to governance in months rather than years.
+          </p>
+
+          <p>
+            The leadership questions arrive much sooner.
+          </p>
+
+
+          <h2>Questions Every Leader Should Ask</h2>
+
+          <p>
+            Whether evaluating AI or the next wave of emerging technology,
+            I believe the leadership questions remain remarkably
+            consistent.
+          </p>
+
+          <ul>
+            <li>What business problem are we trying to solve?</li>
+            <li>How will success be measured?</li>
+            <li>What level of risk is acceptable for our organization?</li>
+            <li>Who owns the outcome?</li>
+            <li>
+              What controls, ownership, and measures need to mature as
+              adoption grows?
+            </li>
+          </ul>
+
+          <p>
+            Those questions are not intended to slow innovation.
+          </p>
+
+          <p>
+            They help connect innovation to business value.
+          </p>
+
+
+          <h2>Final Thoughts</h2>
+
+          <p>
+            The organizations that create lasting value from AI may not be
+            the ones that adopt the most tools the fastest.
+          </p>
+
+          <p>
+            They may be the ones that help their organizations mature
+            alongside the technology.
+          </p>
+
+          <div class="article-ending">
+
+            <p>
+              <strong>
+                Technology changes. Leadership challenges repeat.
+              </strong>
+            </p>
+
+            <p>
+              The only thing that changes is how quickly organizations
+              must respond.
+            </p>
+
+          </div>
+
+
+          <div class="article-source-note">
+
+            <p>
+              This essay was originally published by Mark Patnaude on
+              LinkedIn.
+            </p>
+
+            <p>
+              <a
+                href="https://www.linkedin.com/pulse/technology-changes-leadership-challenges-repeat-mark-patnaude-oabyc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View the original article on LinkedIn
+              </a>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+
+
+    <section class="article-nav">
+      <div class="container">
+
+        <div class="article-nav-inner">
+
+          <p class="eyebrow">Writing & Ideas</p>
+
+          <h2>
+            More from Mark Patnaude
+          </h2>
+
+          <p>
+            Explore writing on technology leadership, artificial
+            intelligence, service management, customer experience and
+            organizational change.
+          </p>
+
+          <div class="actions">
+
+            <a
+              href="/articles/"
+              class="button button-primary"
+            >
+              View Articles & Essays
+            </a>
+
+            <a
+              href="/articles/discovery-before-creation/"
+              class="button button-secondary"
+            >
+              Read Discovery Before Creation
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <p>
+        © 2026 Mark Patnaude. All rights reserved.
+      </p>
+
+      <p>
+        Technology Executive • Author • Practitioner • Educator
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
