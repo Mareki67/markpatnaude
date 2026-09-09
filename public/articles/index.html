@@ -8,10 +8,249 @@
 
   <meta
     name="description"
-    content="Articles, essays and published writing by Mark Patnaude on technology leadership, artificial intelligence, IT service management, customer experience and organizational change."
+    content="Selected articles and essays by Mark Patnaude on technology leadership, artificial intelligence, governance, service delivery, business value and organizational change."
+  >
+
+  <link
+    rel="canonical"
+    href="https://markpatnaude.com/articles/"
   >
 
   <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    .articles-hero {
+      padding: 120px 0 76px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .articles-hero-content {
+      max-width: 900px;
+    }
+
+    .articles-hero h1 {
+      font-size: clamp(3rem, 7vw, 5.3rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: 24px;
+    }
+
+    .articles-hero-copy {
+      max-width: 780px;
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      line-height: 1.55;
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    .articles-section {
+      padding: 88px 0 104px;
+      background: var(--surface);
+    }
+
+    .articles-intro {
+      max-width: 760px;
+      margin-bottom: 48px;
+    }
+
+    .articles-intro h2 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .articles-intro p {
+      color: var(--muted);
+      font-size: 1.12rem;
+      line-height: 1.7;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .article-card-image-wrap {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .article-card-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .article-card-text-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100%;
+      padding: 40px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(49, 95, 120, 0.10),
+          rgba(49, 95, 120, 0.02)
+        );
+    }
+
+    .article-card-text-visual p {
+      max-width: 420px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0;
+    }
+
+    .article-card-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 30px;
+    }
+
+    .article-category {
+      margin-bottom: 12px;
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .article-card h2 {
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      margin-bottom: 16px;
+    }
+
+    .article-summary {
+      color: var(--muted);
+      font-size: 1.04rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+
+    .article-meta {
+      margin-top: auto;
+      padding-top: 8px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 22px;
+    }
+
+    .article-card .button {
+      align-self: flex-start;
+    }
+
+    .topics-section {
+      padding: 76px 0;
+      background: var(--dark);
+      color: #fff;
+    }
+
+    .topics-section h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .topics-section p {
+      max-width: 760px;
+      color: rgba(255,255,255,0.72);
+      font-size: 1.08rem;
+      line-height: 1.7;
+      margin-bottom: 34px;
+    }
+
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .topic-card {
+      padding: 24px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 6px;
+      background: rgba(255,255,255,0.04);
+    }
+
+    .topic-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.12rem;
+    }
+
+    .topic-card p {
+      margin: 0;
+      font-size: 0.96rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.68);
+    }
+
+    .articles-footer-section {
+      padding: 68px 0;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+    }
+
+    .articles-footer-inner {
+      max-width: 780px;
+    }
+
+    .articles-footer-inner h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+    }
+
+    .articles-footer-inner p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 26px;
+    }
+
+    @media (max-width: 850px) {
+      .articles-hero {
+        padding: 96px 0 56px;
+      }
+
+      .articles-section {
+        padding: 64px 0 80px;
+      }
+
+      .article-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .topics-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -37,10 +276,10 @@
 
   <main>
 
-    <section class="hero">
+    <section class="articles-hero">
       <div class="container">
 
-        <div class="hero-content">
+        <div class="articles-hero-content">
 
           <p class="eyebrow">
             Articles & Essays
@@ -50,10 +289,9 @@
             Writing grounded in practice, research and experience.
           </h1>
 
-          <p class="hero-copy">
-            Selected published work and original essays on technology
-            leadership, artificial intelligence, IT service management,
-            customer experience and organizational change.
+          <p class="articles-hero-copy">
+            Selected writing on technology leadership, artificial intelligence,
+            governance, service delivery, business value and organizational change.
           </p>
 
         </div>
@@ -62,101 +300,191 @@
     </section>
 
 
-    <section class="section section-white">
+    <section class="articles-section">
       <div class="container">
 
-        <div class="section-heading">
+        <div class="articles-intro">
 
-          <p class="eyebrow">Published Work</p>
+          <p class="eyebrow">
+            Selected Writing
+          </p>
 
           <h2>
-            Writing published beyond this site.
+            Ideas that connect technology to organizational value.
           </h2>
 
           <p>
-            Articles and essays published by external organizations,
-            professional outlets and other editorial platforms.
+            These essays and articles examine how leaders navigate technology
+            change, govern emerging capabilities, improve service relationships
+            and make better decisions.
           </p>
 
         </div>
 
 
-        <div class="grid">
+        <div class="article-grid">
 
-          <article class="card">
+          <article class="article-card">
 
-            <p class="eyebrow">Technology Leadership</p>
+            <div class="article-card-image-wrap">
+              <div class="article-card-text-visual">
+                <p>
+                  Discovery Before Creation
+                </p>
+              </div>
+            </div>
 
-            <h3>
-              Published article title
-            </h3>
+            <div class="article-card-content">
 
-            <p>
-              Publication name • 2026
-            </p>
+              <p class="article-category">
+                Artificial Intelligence • Decision-Making
+              </p>
 
-            <p style="margin-top: 16px;">
-              A short summary of the article and the question or issue
-              it explores.
-            </p>
+              <h2>
+                Discovery Before Creation
+              </h2>
 
-            <p style="margin-top: 22px;">
-              <a href="#" class="button button-secondary">
-                View Publication
+              <p class="article-summary">
+                A case for using AI to investigate evidence, understand markets
+                and challenge assumptions before asking it to create.
+              </p>
+
+              <p class="article-meta">
+                Original Essay • September 2026
+              </p>
+
+              <a
+                href="/articles/discovery-before-creation/"
+                class="button button-primary"
+              >
+                Read Essay
               </a>
-            </p>
+
+            </div>
 
           </article>
 
 
-          <article class="card">
+          <article class="article-card">
 
-            <p class="eyebrow">Customer Experience</p>
+            <div class="article-card-image-wrap">
+              <img
+                src="/images/technology-changes-leadership-challenges-repeat.png"
+                alt="Technology Changes. Leadership Challenges Repeat."
+                class="article-card-image"
+              >
+            </div>
 
-            <h3>
-              Published article title
-            </h3>
+            <div class="article-card-content">
 
-            <p>
-              Publication name • 2026
-            </p>
+              <p class="article-category">
+                Technology Leadership • Governance
+              </p>
 
-            <p style="margin-top: 16px;">
-              A short summary of the article and the perspective
-              developed through the piece.
-            </p>
+              <h2>
+                Technology Changes. Leadership Challenges Repeat.
+              </h2>
 
-            <p style="margin-top: 22px;">
-              <a href="#" class="button button-secondary">
-                View Publication
+              <p class="article-summary">
+                A leadership framework for navigating technology change through
+                adoption, growth, complexity and governance.
+              </p>
+
+              <p class="article-meta">
+                Originally published on LinkedIn • 2026
+              </p>
+
+              <a
+                href="/articles/technology-changes-leadership-challenges-repeat/"
+                class="button button-primary"
+              >
+                Read Article
               </a>
-            </p>
+
+            </div>
 
           </article>
 
 
-          <article class="card">
+          <article class="article-card">
 
-            <p class="eyebrow">ITSM</p>
+            <div class="article-card-image-wrap">
+              <img
+                src="/images/before-you-deploy-microsoft-copilot.png"
+                alt="Enterprise Governance, Business Value and Trusted Decisions"
+                class="article-card-image"
+              >
+            </div>
 
-            <h3>
-              Published article title
-            </h3>
+            <div class="article-card-content">
 
-            <p>
-              Publication name • 2026
-            </p>
+              <p class="article-category">
+                Enterprise AI • Governance
+              </p>
 
-            <p style="margin-top: 16px;">
-              Practitioner-focused writing on service management,
-              value and operational decision-making.
-            </p>
+              <h2>
+                Before You Deploy Microsoft Copilot, Answer These Seven Governance Questions
+              </h2>
 
-            <p style="margin-top: 22px;">
-              <a href="#" class="button button-secondary">
-                View Publication
+              <p class="article-summary">
+                Seven questions leaders should address around data, access,
+                ownership, information protection, business value, employee
+                judgment and continuing governance.
+              </p>
+
+              <p class="article-meta">
+                Originally published on LinkedIn • July 30, 2026
+              </p>
+
+              <a
+                href="/articles/before-you-deploy-microsoft-copilot/"
+                class="button button-primary"
+              >
+                Read Article
               </a>
-            </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="article-card">
+
+            <div class="article-card-image-wrap">
+              <img
+                src="/images/from-efficiency-to-innovation-msps.png"
+                alt="From Efficiency to Innovation: How MSPs Become Strategic Partners"
+                class="article-card-image"
+              >
+            </div>
+
+            <div class="article-card-content">
+
+              <p class="article-category">
+                Service Delivery • Business Value
+              </p>
+
+              <h2>
+                From Efficiency to Innovation: How MSPs Become Strategic Partners
+              </h2>
+
+              <p class="article-summary">
+                How strong MSP relationships evolve from operational excellence
+                to continuous improvement and ultimately to strategic business value.
+              </p>
+
+              <p class="article-meta">
+                Originally published on LinkedIn • July 21, 2026
+              </p>
+
+              <a
+                href="/articles/from-efficiency-to-innovation-msps/"
+                class="button button-primary"
+              >
+                Read Article
+              </a>
+
+            </div>
 
           </article>
 
@@ -166,140 +494,46 @@
     </section>
 
 
-    <section class="section">
+    <section class="topics-section">
       <div class="container">
 
-        <div class="section-heading">
+        <p class="eyebrow">
+          Topics
+        </p>
 
-          <p class="eyebrow">Selected Essays</p>
+        <h2>
+          Recurring themes across the work.
+        </h2>
 
-          <h2>
-            Original writing hosted on markpatnaude.com.
-          </h2>
+        <p>
+          The writing spans multiple technology domains, but the underlying
+          questions are consistent: how technology creates value, how leaders
+          govern change, and how organizations build the capability to use
+          technology well.
+        </p>
 
-          <p>
-            Essays that can be read directly here, independent of
-            social platforms or external publications.
-          </p>
+        <div class="topics-grid">
 
-        </div>
-
-
-        <div class="grid">
-
-          <article class="card">
-
-            <p class="eyebrow">Leadership</p>
-
-            <h3>
-              Technology Isn’t the Hard Part
-            </h3>
-
-            <p>
-              A practical perspective on why organizational capability,
-              decision-making and people frequently matter more than the
-              technology itself.
-            </p>
-
-            <p style="margin-top: 22px;">
-              <a href="#" class="button button-secondary">
-                Read Essay
-              </a>
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <p class="eyebrow">Artificial Intelligence</p>
-
-            <h3>
-              AI, Discovery and Better Decisions
-            </h3>
-
-            <p>
-              Why AI may be most valuable before creation begins:
-              understanding markets, evidence and context before deciding
-              what to build or how to act.
-            </p>
-
-            <p style="margin-top: 22px;">
-              <a href="#" class="button button-secondary">
-                Read Essay
-              </a>
-            </p>
-
-          </article>
-
-
-          <article class="card">
-
-            <p class="eyebrow">Service Management</p>
-
-            <h3>
-              Service Management Beyond the Framework
-            </h3>
-
-            <p>
-              A practitioner view of service value, resilience and
-              operational reality without reducing the work to a
-              certification framework.
-            </p>
-
-            <p style="margin-top: 22px;">
-              <a href="#" class="button button-secondary">
-                Read Essay
-              </a>
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <section class="section section-dark">
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="eyebrow">Topics</p>
-
-          <h2>
-            Areas I write about.
-          </h2>
-
-        </div>
-
-
-        <div class="grid">
-
-          <article class="card">
+          <div class="topic-card">
             <h3>Technology Leadership</h3>
             <p>
-              Strategy, governance, operations, transformation and
-              executive decision-making.
+              Governance, organizational capability, change and executive decision-making.
             </p>
-          </article>
+          </div>
 
-          <article class="card">
+          <div class="topic-card">
             <h3>Artificial Intelligence</h3>
             <p>
-              AI as a tool for discovery, research, analysis and
-              organizational change.
+              Enterprise readiness, evidence, governance, judgment and business value.
             </p>
-          </article>
+          </div>
 
-          <article class="card">
-            <h3>ITSM & Customer Experience</h3>
+          <div class="topic-card">
+            <h3>Service Delivery</h3>
             <p>
-              Service management, resilience, value, customer experience
-              and practical operational improvement.
+              Operational excellence, continuous improvement, partnerships and outcomes.
             </p>
-          </article>
+          </div>
 
         </div>
 
@@ -307,31 +541,29 @@
     </section>
 
 
-    <section class="section contact">
+    <section class="articles-footer-section">
       <div class="container">
 
-        <div class="section-heading">
+        <div class="articles-footer-inner">
 
-          <p class="eyebrow">Writing & Publishing</p>
+          <p class="eyebrow">
+            Books
+          </p>
 
           <h2>
-            Interested in my work?
+            Some ideas deserve more room.
           </h2>
 
           <p>
-            For editorial, publishing, speaking or professional
-            collaboration inquiries.
+            Explore longer-form work on technology leadership and the accelerating
+            pace of technological change.
           </p>
 
-        </div>
-
-        <div class="actions" style="justify-content:center;">
-
           <a
-            href="mailto:mark.patnaude@outlook.com"
+            href="/books/"
             class="button button-primary"
           >
-            Contact Mark
+            Explore Books
           </a>
 
         </div>
