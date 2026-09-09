@@ -1,1 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Before You Deploy Microsoft Copilot, Answer These Seven Governance Questions | Mark Patnaude</title>
+
+  <meta
+    name="description"
+    content="Before deploying Microsoft Copilot, leaders should address seven governance questions involving data, access, ownership, information protection, business value, employee judgment and continuing governance."
+  >
+
+  <link
+    rel="canonical"
+    href="https://markpatnaude.com/articles/before-you-deploy-microsoft-copilot/"
+  >
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    .article-hero {
+      padding: 100px 0 64px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .article-hero-content {
+      max-width: 980px;
+    }
+
+    .article-hero h1 {
+      font-size: clamp(3rem, 7vw, 5.1rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: 24px;
+    }
+
+    .article-subtitle {
+      max-width: 830px;
+      font-size: clamp(1.25rem, 2vw, 1.55rem);
+      line-height: 1.5;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .article-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .article-section {
+      padding: 80px 0 96px;
+      background: var(--surface);
+    }
+
+    .article-body {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .article-body p {
+      font-size: 1.13rem;
+      line-height: 1.82;
+      margin-bottom: 26px;
+      color: #303943;
+    }
+
+    .article-body h2 {
+      font-size: clamp(1.85rem, 3vw, 2.45rem);
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+      margin-top: 66px;
+      margin-bottom: 22px;
+      color: var(--text);
+    }
+
+    .article-body strong {
+      color: var(--text);
+    }
+
+    .article-callout {
+      margin: 38px 0;
+      padding: 28px 32px;
+      border-left: 4px solid var(--accent);
+      background: var(--bg);
+      font-size: 1.25rem;
+      line-height: 1.55;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .question-number {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .article-body ul {
+      margin: 0 0 30px 24px;
+      padding: 0;
+    }
+
+    .article-body li {
+      margin-bottom: 12px;
+      font-size: 1.08rem;
+      line-height: 1.7;
+      color: #303943;
+    }
+
+    .article-ending {
+      margin-top: 56px;
+      padding-top: 36px;
+      border-top: 1px solid var(--border);
+    }
+
+    .article-source-note {
+      margin-top: 56px;
+      padding: 24px 28px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .article-source-note p {
+      margin-bottom: 0;
+      font-size: 0.98rem;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .article-nav {
+      background: var(--bg);
+      padding: 64px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .article-nav-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .article-nav h2 {
+      font-size: 2rem;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+
+    .article-nav p {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 850px) {
+      .article-hero {
+        padding: 72px 0 56px;
+      }
+
+      .article-section {
+        padding: 64px 0 72px;
+      }
+
+      .article-callout {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+
+      <a href="/" class="brand">Mark Patnaude</a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links">
+          <li><a href="/#leadership">Leadership</a></li>
+          <li><a href="/#writing">Writing & Ideas</a></li>
+          <li><a href="/#education">Speaking & Education</a></li>
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="article-hero">
+      <div class="container">
+
+        <div class="article-hero-content">
+
+          <p class="eyebrow">
+            Enterprise AI • Governance
+          </p>
+
+          <h1>
+            Before You Deploy Microsoft Copilot, Answer These Seven Governance Questions
+          </h1>
+
+          <p class="article-subtitle">
+            AI does not replace governance. It amplifies whatever governance already exists.
+          </p>
+
+          <p class="article-meta">
+            By Mark Patnaude • July 30, 2026 • Originally published on LinkedIn
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <article class="article-section">
+      <div class="container">
+
+        <div class="article-body">
+
+          <p>
+            Over the past year, the conversation around Microsoft Copilot
+            has shifted dramatically. Organizations are no longer asking
+            whether artificial intelligence belongs in the workplace. The
+            discussion has moved to how quickly it can be deployed and how
+            much productivity it can unlock.
+          </p>
+
+          <p>
+            Those are important questions, but they're not the first
+            questions leaders should be asking.
+          </p>
+
+          <p>
+            The first question isn't whether your organization is ready
+            for Copilot.
+          </p>
+
+          <div class="article-callout">
+            It's whether your organization is ready to govern it.
+          </div>
+
+          <p>
+            Artificial intelligence doesn't replace governance. It
+            amplifies whatever governance already exists. Strong
+            governance creates trustworthy outcomes. Weak governance
+            exposes inconsistent processes, poor data management, and
+            unclear accountability much faster than traditional systems
+            ever could.
+          </p>
+
+          <p>
+            Before expanding Copilot across the organization, executive
+            leaders should be able to answer seven governance questions
+            with confidence.
+          </p>
+
+
+          <h2>
+            <span class="question-number">Question 1</span>
+            Is our data ready for Copilot?
+          </h2>
+
+          <p>
+            Copilot works with the information your organization already
+            owns and the permissions you've already established. It
+            doesn't distinguish between information that is current and
+            information that no longer provides business value.
+          </p>
+
+          <p>
+            If your governance is strong, Copilot benefits from it. If it
+            isn't, Copilot simply exposes those weaknesses faster.
+          </p>
+
+          <p>
+            Early in an enterprise information governance initiative, I
+            partnered with business leaders to challenge a common
+            assumption: that every existing record should simply be
+            carried forward into the future.
+          </p>
+
+          <p>
+            Instead, we asked a different question:
+          </p>
+
+          <div class="article-callout">
+            Does this information still provide legitimate business value?
+          </div>
+
+          <p>
+            Over time, the organization had accumulated outdated customer
+            records, duplicate information, applicant records containing
+            personally identifiable information (PII), and other data that
+            no longer served a legitimate business purpose.
+          </p>
+
+          <p>
+            Rather than carrying decades of information forward, we
+            established clear data classifications, reviewed retention
+            requirements, and identified information that no longer
+            supported the business.
+          </p>
+
+          <p>
+            The objective wasn't simply to reduce the volume of data. It
+            was to strengthen governance by ensuring the information we
+            retained was intentional, relevant, appropriately managed, and
+            aligned with the organization's future.
+          </p>
+
+          <p>
+            Copilot makes that same discipline even more important. It
+            doesn't determine whether information is valuable or current.
+            It surfaces information based on existing permissions and
+            governance decisions.
+          </p>
+
+          <p>
+            <strong>
+              The quality of its responses will always reflect the quality
+              of the organization's information governance.
+            </strong>
+          </p>
+
+
+          <h2>
+            <span class="question-number">Question 2</span>
+            Do employees have the right access, not simply more access?
+          </h2>
+
+          <p>
+            Copilot respects the permissions your organization has already
+            established. It doesn't decide who should have access to
+            information; it simply works within the identity and access
+            model you've created.
+          </p>
+
+          <p>
+            That makes identity governance a business responsibility, not
+            just an IT responsibility.
+          </p>
+
+          <p>
+            During a cross-functional governance initiative, I partnered
+            with Human Resources and business leaders to redesign employee
+            onboarding, offboarding, and role-change processes.
+          </p>
+
+          <p>
+            The objective wasn't simply to automate account provisioning
+            or remove access when someone left the organization. It was to
+            establish consistent governance over who should have access to
+            information, when that access should change, and who was
+            responsible for approving those decisions.
+          </p>
+
+          <p>
+            As employees changed roles, departments evolved, and
+            organizational responsibilities shifted, access that was once
+            appropriate didn't always remain appropriate.
+          </p>
+
+          <p>
+            By standardizing these governance processes, we strengthened
+            accountability, reduced unnecessary access, and ensured
+            identity changes consistently reflected business
+            responsibilities.
+          </p>
+
+          <p>
+            Copilot makes those governance decisions even more
+            significant. It doesn't evaluate whether someone should have
+            access to information. Copilot simply honors the permissions
+            that already exist.
+          </p>
+
+          <div class="article-callout">
+            The question isn't whether Copilot can find information. It's
+            whether employees should have access to that information in
+            the first place.
+          </div>
+
+
+          <h2>
+            <span class="question-number">Question 3</span>
+            Who owns Copilot decisions?
+          </h2>
+
+          <p>
+            One of the quickest ways for a Copilot deployment to lose
+            momentum is assuming it belongs to IT.
+          </p>
+
+          <div class="article-callout">
+            Technology makes Copilot possible. Business leadership
+            determines how Copilot creates value.
+          </div>
+
+          <p>
+            Technology teams deploy platforms, but they shouldn't decide
+            how Copilot influences hiring, customer interactions,
+            financial decisions, regulatory obligations, or organizational
+            policy. Those decisions belong to the business.
+          </p>
+
+          <p>
+            During a major enterprise transformation involving multiple
+            business functions, one lesson became clear: successful
+            governance wasn't achieved because one department made every
+            decision. It succeeded because the right decisions were owned
+            by the right people.
+          </p>
+
+          <p>
+            Technology evaluated platforms and implementation options.
+            Business leaders defined operational requirements. Finance
+            established financial controls. Human Resources shaped
+            workforce processes. Executive leadership balanced priorities,
+            investment, and organizational change.
+          </p>
+
+          <p>
+            Copilot requires that same governance discipline. It isn't an
+            IT initiative that happens to affect the business. It's an
+            enterprise capability that depends on business ownership,
+            executive sponsorship, and clearly defined decision rights.
+          </p>
+
+          <p>
+            Without clearly defined decision ownership, organizations risk
+            inconsistent policies, conflicting expectations, and
+            fragmented governance.
+          </p>
+
+          <p>
+            Before expanding Copilot across the enterprise, organizations
+            should clearly define who owns AI policy, acceptable use, risk
+            decisions, oversight, and ongoing governance.
+          </p>
+
+
+          <h2>
+            <span class="question-number">Question 4</span>
+            What information should never be used by Copilot?
+          </h2>
+
+          <p>
+            Not every document should be equally discoverable simply
+            because it exists.
+          </p>
+
+          <p>
+            Copilot works within the document governance decisions your
+            organization has already established. If sensitive information
+            is stored in the wrong location, classified inconsistently, or
+            accessible to broader audiences than intended, Copilot doesn't
+            distinguish between information that should be broadly shared
+            and information that requires greater protection.
+          </p>
+
+          <p>
+            That makes document governance far more than an exercise in
+            organizing files. It becomes a critical component of
+            successful Copilot governance.
+          </p>
+
+          <p>
+            During a document management modernization initiative, I
+            partnered with business leaders to rethink how organizational
+            information should be managed rather than simply migrating
+            documents into a new repository.
+          </p>
+
+          <p>
+            Together, we established governance around how information
+            should be organized, classified, secured, retained, and
+            accessed based on its business purpose and sensitivity.
+          </p>
+
+          <p>
+            Financial records, operational documents, employee
+            information, and other confidential content required different
+            governance than general business information.
+          </p>
+
+          <p>
+            The objective wasn't simply to improve document management. It
+            was to ensure employees could quickly access the information
+            they needed while protecting information that required greater
+            stewardship.
+          </p>
+
+          <p>
+            Copilot makes those governance decisions more important than
+            ever. It doesn't determine which documents require greater
+            protection or broader visibility. It simply honors the
+            classifications, permissions, and governance decisions already
+            in place.
+          </p>
+
+          <div class="article-callout">
+            The question isn't whether Copilot can summarize a document.
+            It's whether that document should have been available to
+            summarize in the first place.
+          </div>
+
+
+          <h2>
+            <span class="question-number">Question 5</span>
+            How will we measure business value?
+          </h2>
+
+          <p>
+            One of the easiest mistakes organizations make is measuring
+            the success of a Copilot deployment instead of measuring the
+            success of the business.
+          </p>
+
+          <p>
+            Many organizations celebrate implementation metrics:
+          </p>
+
+          <ul>
+            <li>Licenses assigned</li>
+            <li>Active users</li>
+            <li>Number of prompts submitted</li>
+          </ul>
+
+          <p>
+            <strong>
+              Those metrics describe activity. They don't describe value.
+            </strong>
+          </p>
+
+          <p>
+            Executives should ask different questions.
+          </p>
+
+          <ul>
+            <li>
+              Has Copilot reduced the time required to complete critical
+              business processes?
+            </li>
+            <li>Has it improved service quality?</li>
+            <li>Has it accelerated employee onboarding?</li>
+            <li>Has it reduced organizational risk?</li>
+            <li>
+              Has it improved the quality and consistency of business
+              decisions?
+            </li>
+            <li>
+              Has it allowed employees to spend more time solving problems
+              instead of searching for information?
+            </li>
+          </ul>
+
+          <p>
+            Those are measures of organizational performance, not
+            technology adoption.
+          </p>
+
+          <p>
+            Copilot doesn't create business value because employees use
+            it. It creates business value when it helps the organization
+            perform better.
+          </p>
+
+          <p>
+            Organizations don't realize value because they deploy Copilot.
+            They realize value because Copilot improves organizational
+            performance.
+          </p>
+
+          <p>
+            It should be measured by the outcomes it enables, the
+            decisions it improves, and the value it creates for the
+            organization.
+          </p>
+
+
+          <h2>
+            <span class="question-number">Question 6</span>
+            Are employees prepared to use Copilot responsibly?
+          </h2>
+
+          <p>
+            Successful Copilot adoption depends on more than teaching
+            employees how to use Copilot.
+          </p>
+
+          <p>
+            It depends on helping them understand when Copilot should
+            support their work and when human judgment should remain the
+            final authority.
+          </p>
+
+          <p>
+            Organizations often focus training on prompts, features, and
+            productivity tips. Those skills are important, but they
+            address only part of responsible Copilot adoption.
+          </p>
+
+          <p>
+            Employees also need guidance on when AI-generated information
+            should be verified, when confidential matters require greater
+            discretion, and when business decisions require experience,
+            context, or regulatory considerations that extend beyond AI's
+            capabilities.
+          </p>
+
+          <p>
+            The objective isn't to discourage employees from using AI.
+          </p>
+
+          <p>
+            It's to help them apply it appropriately.
+          </p>
+
+          <div class="article-callout">
+            Copilot can accelerate work. It cannot assume accountability
+            for the decisions people make.
+          </div>
+
+          <p>
+            Organizations that prepare employees to exercise judgment, not
+            simply operate the technology, are far more likely to realize
+            Copilot's benefits while reducing organizational risk.
+          </p>
+
+
+          <h2>
+            <span class="question-number">Question 7</span>
+            How will Copilot governance evolve?
+          </h2>
+
+          <p>
+            <strong>
+              Deploying Copilot isn't the end of the governance journey.
+              It's the beginning.
+            </strong>
+          </p>
+
+          <p>
+            Microsoft continues to expand Copilot's capabilities across
+            Microsoft 365, introducing new features, deeper integrations,
+            and new ways for employees to interact with organizational
+            information.
+          </p>
+
+          <p>
+            As those capabilities evolve, the governance decisions
+            surrounding Copilot must evolve with them.
+          </p>
+
+          <p>
+            Organizations should regularly review information governance,
+            access models, acceptable use policies, business ownership,
+            and the measures used to evaluate business value.
+          </p>
+
+          <p>
+            Governance shouldn't remain static while the technology
+            continues to mature.
+          </p>
+
+          <p>
+            Successful organizations won't treat Copilot governance as a
+            project completed during deployment. They'll treat it as an
+            ongoing leadership discipline that evolves alongside the
+            platform.
+          </p>
+
+          <div class="article-ending">
+
+            <p>
+              <strong>
+                Copilot will continue to evolve. Leadership's
+                responsibility to govern it will continue to evolve as
+                well.
+              </strong>
+            </p>
+
+          </div>
+
+
+          <div class="article-source-note">
+            <p>
+              This essay was originally published by Mark Patnaude on
+              LinkedIn on July 30, 2026.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+
+
+    <section class="article-nav">
+      <div class="container">
+
+        <div class="article-nav-inner">
+
+          <p class="eyebrow">Writing & Ideas</p>
+
+          <h2>
+            More from Mark Patnaude
+          </h2>
+
+          <p>
+            Explore writing on technology leadership, artificial
+            intelligence, governance, service management and
+            organizational change.
+          </p>
+
+          <div class="actions">
+
+            <a
+              href="/articles/"
+              class="button button-primary"
+            >
+              View Articles & Essays
+            </a>
+
+            <a
+              href="/articles/technology-changes-leadership-challenges-repeat/"
+              class="button button-secondary"
+            >
+              Read Technology Changes
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <p>
+        © 2026 Mark Patnaude. All rights reserved.
+      </p>
+
+      <p>
+        Technology Executive • Author • Practitioner • Educator
+      </p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
