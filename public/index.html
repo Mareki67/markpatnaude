@@ -264,13 +264,23 @@
     .case-study-metrics {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px 24px;
+      gap: 10px 0;
       margin-bottom: 26px;
       font-size: 0.94rem;
     }
 
     .case-study-metrics strong {
       color: var(--text);
+    }
+
+    .case-study-metrics span {
+      padding: 0 22px;
+      border-left: 1px solid var(--border);
+    }
+
+    .case-study-metrics span:first-child {
+      padding-left: 0;
+      border-left: 0;
     }
 
     .case-study-visual {
@@ -283,8 +293,8 @@
     .case-study-visual img {
       display: block;
       width: auto;
-      max-width: 290px;
-      max-height: 410px;
+      max-width: 342px;
+      max-height: 484px;
       height: auto;
       border-radius: 18px;
       box-shadow: 0 16px 38px rgba(24,32,42,0.18);
@@ -308,8 +318,8 @@
       }
 
       .case-study-visual img {
-        max-width: 220px;
-        max-height: 360px;
+        max-width: 250px;
+        max-height: 400px;
       }
     }
 
