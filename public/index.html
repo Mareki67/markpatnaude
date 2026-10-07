@@ -239,8 +239,8 @@
     }
 
     .case-study-copy h2 {
-      max-width: 720px;
-      font-size: clamp(2.25rem, 4.2vw, 3.6rem);
+      max-width: 760px;
+      font-size: clamp(2.15rem, 3.6vw, 3.25rem);
       line-height: 1.03;
       letter-spacing: -0.045em;
       margin-bottom: 12px;
@@ -274,25 +274,20 @@
     }
 
     .case-study-visual {
-      padding: 28px;
-      background: rgba(255,255,255,0.72);
-      border: 1px solid rgba(49,95,120,0.18);
-      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 0;
     }
 
-    .case-study-visual-mark {
-      color: #1769aa;
-      font-size: clamp(2.2rem, 5vw, 4.2rem);
-      font-weight: 800;
-      line-height: 0.95;
-      letter-spacing: -0.055em;
-      margin-bottom: 14px;
-    }
-
-    .case-study-visual p {
-      color: var(--muted);
-      line-height: 1.55;
-      margin: 0;
+    .case-study-visual img {
+      display: block;
+      width: auto;
+      max-width: 290px;
+      max-height: 410px;
+      height: auto;
+      border-radius: 18px;
+      box-shadow: 0 16px 38px rgba(24,32,42,0.18);
     }
 
     @media (max-width: 950px) {
@@ -308,7 +303,13 @@
       }
 
       .case-study-visual {
-        display: none;
+        display: flex;
+        margin-top: 4px;
+      }
+
+      .case-study-visual img {
+        max-width: 220px;
+        max-height: 360px;
       }
     }
 
@@ -530,12 +531,11 @@
             </a>
           </div>
 
-          <aside class="case-study-visual" aria-label="Tailendar product summary">
-            <div class="case-study-visual-mark">Tailendar</div>
-            <p>
-              Dogs. Cats. Both.<br>
-              A new pet experience every day.
-            </p>
+          <aside class="case-study-visual" aria-label="Tailendar production app">
+            <img
+              src="/images/tailendar-production-both.png"
+              alt="Tailendar production Android app showing the Dogs and Cats daily experience"
+            >
           </aside>
 
         </div>
