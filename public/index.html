@@ -224,24 +224,75 @@
       align-self: flex-start;
     }
 
-    .project-note {
-      max-width: 820px;
-      padding: 32px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-left: 4px solid var(--accent);
-      border-radius: 6px;
+    .featured-case-study {
+      padding: 58px 0;
+      background: linear-gradient(120deg, #eef6fb 0%, #f7fafc 58%, #ffffff 100%);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
 
-    .project-note h3 {
+    .case-study-layout {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 54px;
+      align-items: center;
+    }
+
+    .case-study-copy h2 {
+      max-width: 720px;
+      font-size: clamp(2.25rem, 4.2vw, 3.6rem);
+      line-height: 1.03;
+      letter-spacing: -0.045em;
       margin-bottom: 12px;
-      font-size: 1.45rem;
     }
 
-    .project-note p {
+    .case-study-title {
+      color: #1769aa;
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .case-study-summary {
+      max-width: 720px;
       color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 0;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .case-study-metrics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-bottom: 26px;
+      font-size: 0.94rem;
+    }
+
+    .case-study-metrics strong {
+      color: var(--text);
+    }
+
+    .case-study-visual {
+      padding: 28px;
+      background: rgba(255,255,255,0.72);
+      border: 1px solid rgba(49,95,120,0.18);
+      border-radius: 10px;
+    }
+
+    .case-study-visual-mark {
+      color: #1769aa;
+      font-size: clamp(2.2rem, 5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+      margin-bottom: 14px;
+    }
+
+    .case-study-visual p {
+      color: var(--muted);
+      line-height: 1.55;
+      margin: 0;
     }
 
     @media (max-width: 950px) {
@@ -251,8 +302,13 @@
       }
 
       .writing-paths,
-      .featured-books-home {
+      .featured-books-home,
+      .case-study-layout {
         grid-template-columns: 1fr;
+      }
+
+      .case-study-visual {
+        display: none;
       }
     }
 
@@ -446,30 +502,43 @@
 
     <!-- FEATURED CASE STUDY -->
 
-    <section class="section" id="featured-case-study">
+    <section class="featured-case-study" id="featured-case-study">
       <div class="container">
+        <div class="case-study-layout">
 
-        <div class="project-note">
-          <p class="eyebrow">Featured Case Study</p>
+          <div class="case-study-copy">
+            <p class="eyebrow">Featured Case Study</p>
 
-          <h2 style="font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; letter-spacing: -0.04em; margin-bottom: 18px;">
-            From concept to commercial launch.
-          </h2>
+            <h2>From idea to commercial launch.</h2>
 
-          <p>
-            In 2026, I took Tailendar from an initial product concept through
-            application development, cloud operations, AI-assisted content
-            production, governance, business formation, marketplace approval
-            and commercial launch.
-          </p>
+            <p class="case-study-title">Tailendar — Cats &amp; Dogs 2027</p>
 
-          <div class="section-action">
+            <p class="case-study-summary">
+              A real-world product launch spanning application development,
+              cloud operations, AI-assisted content production, governance,
+              business formation, marketplace compliance and go-to-market execution.
+            </p>
+
+            <div class="case-study-metrics" aria-label="Tailendar case study highlights">
+              <span><strong>1,095</strong> daily experiences</span>
+              <span><strong>Google Play</strong> production launch</span>
+              <span><strong>AI + human governance</strong></span>
+            </div>
+
             <a href="/projects/tailendar/" class="button button-primary">
-              Read the Tailendar Case Study
+              Read the Case Study
             </a>
           </div>
-        </div>
 
+          <aside class="case-study-visual" aria-label="Tailendar product summary">
+            <div class="case-study-visual-mark">Tailendar</div>
+            <p>
+              Dogs. Cats. Both.<br>
+              A new pet experience every day.
+            </p>
+          </aside>
+
+        </div>
       </div>
     </section>
 
@@ -900,21 +969,20 @@
 
           <article class="card">
 
-            <h3>Tailendar: From Concept to Commercial Launch</h3>
+            <h3>Technology Leadership Portfolio</h3>
 
             <p>
-              A current case study in taking a consumer technology product from
-              idea through development, cloud operations, AI-assisted content
-              production, governance, business formation and go-to-market execution.
+              Selected approaches and real-world examples from technology
+              operations, governance, transformation and executive leadership.
             </p>
 
             <p style="margin-top: 22px;">
 
               <a
-                href="/projects/tailendar/"
+                href="/leadership/"
                 class="button button-secondary"
               >
-                Read the Case Study
+                View Leadership Portfolio
               </a>
 
             </p>
