@@ -148,6 +148,24 @@
       margin-bottom: 26px;
     }
 
+    .book-topics { margin-top: 30px; }
+    .book-topics h3 { font-size: 1.35rem; margin-bottom: 18px; }
+    .topic-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+    .topic-card { background: var(--bg); padding: 20px 16px; border: 1px solid var(--border); border-radius: 8px; }
+    .topic-symbol { font-size: 2rem; display: block; margin-bottom: 12px; color: var(--accent); }
+    .topic-card h4 { font-size: 1rem; margin-bottom: 8px; }
+    .topic-card p { font-size: .93rem; line-height: 1.55; color: var(--muted); margin: 0; }
+    .next-book { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 36px; display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: center; }
+    .next-book-placeholder { aspect-ratio: 2/3; background: var(--surface); border: 2px dashed var(--border); border-radius: 6px; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--muted); font-weight: 700; padding: 20px; }
+    .next-book h2 { font-size: clamp(1.7rem, 3vw, 2.5rem); margin-bottom: 12px; }
+    .next-book p { color: var(--muted); line-height: 1.65; }
+    @media (max-width: 850px) {
+      .topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .next-book { grid-template-columns: 1fr; }
+      .next-book-placeholder { width: 160px; }
+    }
+    @media (max-width: 480px) { .topic-grid { grid-template-columns: 1fr; } }
+
     @media (max-width: 850px) {
       .books-hero {
         padding: 96px 0 56px;
@@ -273,6 +291,7 @@
 
           </div>
 
+<section class="book-topics" aria-label="What Readers Will Learn"><h3>What Readers Will Learn</h3><div class="topic-grid"><div class="topic-card"><span class="topic-symbol" aria-hidden="true">♟</span><h4>People First</h4><p>Technology succeeds when people understand and embrace its purpose.</p></div><div class="topic-card"><span class="topic-symbol" aria-hidden="true">↗</span><h4>Business Value</h4><p>Connect technology decisions to meaningful organizational outcomes.</p></div><div class="topic-card"><span class="topic-symbol" aria-hidden="true">⚙</span><h4>Effective Processes</h4><p>Build practical processes that improve consistency and performance.</p></div><div class="topic-card"><span class="topic-symbol" aria-hidden="true">→</span><h4>Lasting Change</h4><p>Strengthen organizational readiness and sustain improvements over time.</p></div></div></section>
         </article>
 
 
@@ -327,8 +346,13 @@
 
           </div>
 
+<section class="book-topics" aria-label="Four Forces Shaping Our Future"><h3>Four Forces Shaping Our Future</h3><div class="topic-grid"><div class="topic-card"><span class="topic-symbol" aria-hidden="true">♜</span><h4>Industrial Revolution</h4><p>How mechanization transformed work and society.</p></div><div class="topic-card"><span class="topic-symbol" aria-hidden="true">✦</span><h4>Electrification</h4><p>How electricity accelerated industry and everyday life.</p></div><div class="topic-card"><span class="topic-symbol" aria-hidden="true">⌘</span><h4>Digital Revolution</h4><p>How computing and connectivity reshaped the world.</p></div><div class="topic-card"><span class="topic-symbol" aria-hidden="true">✧</span><h4>Artificial Intelligence</h4><p>How AI is accelerating change and challenging adaptation.</p></div></div></section>
         </article>
 
+        <section class="next-book" aria-label="Upcoming book">
+          <div class="next-book-placeholder" aria-label="Cover not yet announced">Cover Coming Soon</div>
+          <div><p class="book-label">In Development</p><h2>Next Book: ITSM Practitioner Guide</h2><p>A framework-independent exploration of practical service management, effective discipline, and delivering business value. Title, cover, and publication date will be announced when confirmed.</p></div>
+        </section>
       </div>
     </section>
 
