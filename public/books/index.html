@@ -148,12 +148,12 @@
       margin-bottom: 26px;
     }
 
-    .book-topics { margin-top: 30px; }
+    .book-topics { grid-column: 1 / -1; width: 100%; margin-top: 12px; min-width: 0; }
     .book-topics h3 { font-size: 1.35rem; margin-bottom: 18px; }
-    .topic-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
-    .topic-card { background: var(--bg); padding: 20px 16px; border: 1px solid var(--border); border-radius: 8px; }
+    .topic-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; width: 100%; }
+    .topic-card { min-width: 0; overflow-wrap: break-word; background: var(--bg); padding: 24px 20px; border: 1px solid var(--border); border-radius: 8px; }
     .topic-symbol { font-size: 2rem; display: block; margin-bottom: 12px; color: var(--accent); }
-    .topic-card h4 { font-size: 1rem; margin-bottom: 8px; }
+    .topic-card h4 { font-size: 1.05rem; line-height: 1.4; margin-bottom: 8px; }
     .topic-card p { font-size: .93rem; line-height: 1.55; color: var(--muted); margin: 0; }
     .next-book { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 36px; display: grid; grid-template-columns: 180px 1fr; gap: 40px; align-items: center; }
     .next-book-placeholder { aspect-ratio: 2/3; background: var(--surface); border: 2px dashed var(--border); border-radius: 6px; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--muted); font-weight: 700; padding: 20px; }
