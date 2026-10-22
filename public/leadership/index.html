@@ -20,25 +20,6 @@
   <link rel="stylesheet" href="/css/styles.css">
 
   <style>
-    /* Responsive, accessible image-led leadership introduction */
-    .leadership-photo-hero { position: relative; min-height: 490px; display: flex; align-items: center; overflow: hidden; background: #d4dfeb; }
-    .leadership-photo-hero picture, .leadership-photo-hero picture img { position: absolute; inset: 0; width: 100%; height: 100%; }
-    .leadership-photo-hero picture img { object-fit: cover; object-position: center center; }
-    .leadership-photo-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(235,242,249,.79) 0%, rgba(235,242,249,.45) 39%, transparent 68%); pointer-events: none; }
-    .leadership-photo-hero .container { position: relative; z-index: 1; width: 100%; }
-    .leadership-photo-copy { max-width: 630px; padding: 72px 0; }
-    .leadership-photo-copy .eyebrow { color: #173452; }
-    .leadership-photo-copy h1 { font-size: clamp(2.7rem, 5.3vw, 5.4rem); line-height: 1.07; letter-spacing: -.05em; color: #102743; margin: 0; overflow-wrap: normal; }
-    @media (max-width: 700px) {
-      .leadership-photo-hero { display: block; min-height: 0; background: var(--bg); }
-      .leadership-photo-hero picture { position: relative; display: block; height: min(80vw, 390px); }
-      .leadership-photo-hero picture img { object-position: center center; }
-      .leadership-photo-hero::after { display: none; }
-      .leadership-photo-hero .container { position: relative; }
-      .leadership-photo-copy { padding: 38px 0 32px; }
-      .leadership-photo-copy h1 { font-size: clamp(2.2rem, 8vw, 3.5rem); }
-    }
-
     .leadership-hero {
       padding: 120px 0 82px;
       background: var(--bg);
@@ -49,7 +30,7 @@
       max-width: 920px;
     }
 
-    .leadership-hero h2 {
+    .leadership-hero h1 {
       font-size: clamp(2.6rem, 5vw, 3.8rem);
       line-height: 1;
       letter-spacing: -0.05em;
@@ -415,18 +396,6 @@
 
   <main>
 
-    <section class="leadership-photo-hero" aria-labelledby="leadership-photo-title">
-      <picture>
-        <source media="(max-width: 700px)" srcset="/images/leadership-hero-mobile.webp">
-        <img src="/images/leadership-hero-desktop.webp" alt="A hiker overlooking mountain ranges at sunrise" fetchpriority="high" decoding="async">
-      </picture>
-      <div class="container"><div class="leadership-photo-copy">
-        <p class="eyebrow">Leadership Philosophy</p>
-        <h1 id="leadership-photo-title">Strategic.<br>Collaborative.<br>Pragmatic.</h1>
-      </div></div>
-    </section>
-
-
     <section class="leadership-hero">
       <div class="container">
 
@@ -436,12 +405,12 @@
             Leadership
           </p>
 
-          <h2>
+          <h1>
             <span style="display: block;">Technology creates capability.</span>
             <span style="display: block; margin-top: 0.5em;">
               Leadership turns that capability into organizational results.
             </span>
-          </h2>
+          </h1>
 
           <p class="leadership-thesis">
             Technology leadership is rarely about technology alone.
