@@ -262,6 +262,57 @@
       margin: 0;
     }
 
+    .outcomes-heading {
+      max-width: 800px;
+      margin: 0 0 24px;
+    }
+
+    .outcomes-heading h3 {
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+      margin: 0 0 12px;
+    }
+
+    .outcomes-heading p:last-child {
+      color: rgba(255,255,255,0.72);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    .outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-bottom: 42px;
+    }
+
+    .outcome-card {
+      padding: 24px 18px;
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 6px;
+      background: rgba(255,255,255,0.04);
+      min-width: 0;
+    }
+
+    .outcome-card h4 {
+      font-size: 1.03rem;
+      line-height: 1.35;
+      margin: 0 0 10px;
+    }
+
+    .outcome-card p {
+      color: rgba(255,255,255,0.68);
+      line-height: 1.5;
+      font-size: 0.94rem;
+      margin: 0;
+    }
+
+    .outcome-card .scale-number {
+      font-size: clamp(1.35rem, 2vw, 1.9rem);
+      line-height: 1.15;
+    }
+
     .scale-closing {
       max-width: 860px;
       font-size: 1.2rem;
@@ -729,6 +780,35 @@
             <p>Technology planning with investment and variance management</p>
           </div>
 
+        </div>
+
+        <div class="outcomes-heading">
+          <p class="eyebrow">Selected Leadership Outcomes</p>
+          <h3>Technology leadership measured by business impact.</h3>
+          <p>Measurable improvements in risk, cost, operational efficiency, and enterprise data quality.</p>
+        </div>
+
+        <div class="outcomes-grid">
+          <article class="outcome-card">
+            <span class="scale-number">~22%</span>
+            <h4>Cybersecurity Maturity</h4>
+            <p>Improved NIST CSF maturity over 18 months through stronger controls, governance, and operational discipline.</p>
+          </article>
+          <article class="outcome-card">
+            <span class="scale-number">~75%</span>
+            <h4>Recurring Cost Reduction</h4>
+            <p>Reduced recurring telecommunications costs through strategic consolidation, modernization, and vendor management.</p>
+          </article>
+          <article class="outcome-card">
+            <span class="scale-number">1 day → 1–2 hrs</span>
+            <h4>Business Process Transformation</h4>
+            <p>Redesigned a finance document-management workflow, reducing processing time from a full day to 1–2 hours.</p>
+          </article>
+          <article class="outcome-card">
+            <span class="scale-number">30+ yrs</span>
+            <h4>Enterprise Data Modernization</h4>
+            <p>Cleansed decades of enterprise data, removing outdated information to improve quality and reduce noise.</p>
+          </article>
         </div>
 
         <p class="scale-closing">
